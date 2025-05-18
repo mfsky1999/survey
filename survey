@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>پرسشنامه تصادفی</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+            direction: rtl;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>👋 به پرسشنامه تحقیقاتی خوش آمدید</h1>
+    <p>برای ادامه، لطفاً روی لینک زیر کلیک کنید:</p>
+
+    <script>
+        // لینک‌های پرسشنامه‌ها
+        const surveys = [
+            "https://survey.porsline.ir/s/ZHrG1Kr7",
+            "https://survey.porsline.ir/s/hA9A9a7M"
+        ];
+
+        // انتخاب تصادفی یکی از لینک‌ها
+        const selectedLink = surveys[Math.floor(Math.random() * surveys.length)];
+
+        // نمایش لینک به کاربر
+        document.write("<a href='" + selectedLink + "' target='_blank'>شروع پرسشنامه</a>");
+    </script>
+</body>
+</html>
